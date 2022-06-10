@@ -12,13 +12,13 @@
 
     {{-- <link rel="stylesheet" href="css/style.css"> --}}
 
-    <title>Bimasakti Blog | {{ $title }}</title>
+    <title>BiBlog | {{ $title }}</title>
   </head>
   <body>
       {{-- Navbar --}}
       <nav class="navbar navbar-expand-lg navbar-dark" style="background: #6698FF">
         <div class="container">
-          <a class="navbar-brand" href="/">Bimasakti</a>
+          <a class="navbar-brand" href="/">BiBlog</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -31,7 +31,10 @@
                 <a class="nav-link {{ ($title === "About") ? 'active' : '' }}" href="/about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ ($title === "Posts") ? 'active' : '' }}" href="/posts">Blog</a>
+                <a class="nav-link {{ ($title === "All Posts") ? 'active' : '' }}" href="/posts">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {{ ($title === "Post Categories") ? 'active' : '' }}" href="/categories">Categories</a>
               </li>
             </ul>
           </div>
