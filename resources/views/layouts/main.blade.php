@@ -10,7 +10,11 @@
      rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
      crossorigin="anonymous">
 
-    {{-- <link rel="stylesheet" href="css/style.css"> --}}
+     {{-- Bootstrap Icon --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    {{-- my style --}}
+  <link rel="stylesheet" href="css/style.css">
 
     <title>BiBlog | {{ $title }}</title>
   </head>
@@ -35,6 +39,15 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link {{ ($title === "Post Categories") ? 'active' : '' }}" href="/categories">Categories</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="/login" class="nav-link {{ ($title === "Login") ? 'active' : '' }}">
+                  <i class="bi bi-box-arrow-in-right"></i>
+                  Login
+                </a>
               </li>
             </ul>
           </div>
