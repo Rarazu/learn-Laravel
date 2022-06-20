@@ -23,7 +23,7 @@ php artisan make:seeder UserSeeder
 ```
 
 ## Seeder
-### Running Migrations
+### Running Seeders
 ```
 php artisan db:seed
 ```
@@ -32,7 +32,7 @@ php artisan migrate:fresh --seed
 ```
 
 ## Migrations
-### Running Seeders
+### Running Migration
 ```
 php artisan migrate
 ```
